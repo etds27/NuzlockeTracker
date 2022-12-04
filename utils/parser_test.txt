@@ -1,0 +1,717 @@
+<html style="height: 100%; margin: 0; padding: 0; width: 100%" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Language" content="en-us">
+<title>SpriteDex: Sprites Pokémon Yellow (Game Boy Color)</title>
+<meta name="description" content="Pokémon Encyclopedia, Pokédex, Sprites,…">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<style type="text/css">
+body { margin: 0;
+	font-family: Verdana, sans-serif; font-size: 10pt; color: #203F10; background-color: #E0FFD0; }
+* { font-family: inherit; font-size: inherit; }
+code { font-family: "Lucida Console", monospace; }
+sup, sub { font-size: 8pt; }
+.help { cursor: help; }
+div { color: inherit; }
+table { color: inherit; border: 0; border-collapse: collapse; border-spacing: 0; margin: 0; }
+th { border: 0; padding: 12px 6px; font-size: 11pt; text-align: center; }
+td { border: 0; padding: 6px; text-align: center; }
+.nopad,th.nopad,td.nopad { padding: 0 !important; }
+table.bb > thead > tr > th { border: 1px solid silver; }
+table.bb > tr > th { border: 1px solid silver; }
+table.bb > tbody > tr > td { border: 1px solid silver; }
+table.bb > tr > td { border: 1px solid silver; }
+table.bb > tfoot > tr > td { border: 1px solid silver; }
+table#movesortable > tbody > tr > td { padding: 0 6px; }
+p { text-align: justify; margin: 6px 12px; }
+p.stitle { text-align: left; margin: 12px; font-size: 14pt; color: SeaGreen; }
+a:link { color: #316AC5; background-color: transparent; text-decoration: underline; }
+a:visited { color: SlateBlue; background-color: transparent; text-decoration: underline; }
+a:hover { color: white !important; background-color: #316AC5 !important; text-decoration: none; }
+a:hover span { color: inherit !important; }
+a:active { color: Crimson; background-color: transparent; text-decoration: underline; }
+a.fixed_color:hover { color: white !important; background-color: #316AC5 !important; text-decoration: none; }
+img { border: 0; vertical-align: middle; }
+td#extlnk img { vertical-align: initial; }
+a.img { color: #316AC5 !important; background-color: transparent !important; text-decoration: none; }
+a.img:hover { color: #316AC5 !important; background-color: transparent !important; text-decoration: none; }
+a.img:hover img.disabled { filter: grayscale(75%); }
+a.min:hover { color: white !important; background-color: #316AC5 !important; font-size: 11pt; }
+a.min:hover b { font-size: 12pt; }
+a.topbar { padding: 4px; border: 1px solid SkyBlue; border-radius: 6px; background-color: DeepSkyBlue !important; color: white !important; text-shadow: 1px 1px 2px #316AC5; text-decoration: none; }
+a.topbar:hover { text-shadow: 1px 1px 4px navy; }
+a#label0 { padding: 4px; border: 1px solid SkyBlue; border-radius: 6px; background-color: DeepSkyBlue !important; color: white !important; text-shadow: -1px 1px 2px #316AC5; text-decoration: none; }
+a#label0:hover { text-shadow: -1px 1px 4px navy; }
+caption { text-align: left; }
+option { text-align: left; }
+div.flexddbox > form > select { width: 100% !important; }
+tr.ovrf3 > td.eor { max-width: 0; overflow: hidden; text-overflow: ellipsis; text-align: left; white-space: nowrap; }
+div#incl_div { color: black; background-color: transparent; }
+div#spr_dump { text-align: left; padding: 8px; font-size: 9pt; }
+table.spr { display: inline-table; border: 1px dotted silver; border-collapse: separate; border-spacing: 2px; border-radius: 3px; margin-bottom: 4px; }
+table.spr td { padding: 0 !important; }
+table.spr td img { vertical-align: bottom; margin-top: 1px; margin-left: 1px; margin-bottom: 0; margin-right: 1px; }
+table#sprlst td { text-align: left; padding-top: 8px; padding-left: 15px; padding-bottom: 8px; padding-right: 8px; }
+tr.valign_text > th { vertical-align: bottom; }
+tr.valign_text > th > div { transform: rotate(-90deg); }
+tr.valign_text > th > div > span.widesp { letter-spacing: 1px; }
+input[type=text] { border-width: 1px; border-style: solid; border-color: gray silver silver gray; }
+.blink { animation:1s blinker linear infinite; }
+@keyframes blinker {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+</style>
+<script type="text/javascript">
+if (top.location!= self.location) {
+	top.location = self.location.href; };
+var currentwidth = window.innerWidth || document.body.clientWidth;
+var currentheight = window.innerHeight || document.body.clientHeight;
+var homelinkname = 0;
+var mobi = 0;
+var opened = 0;
+var dc = 1;
+function dotinfo() {
+	document.getElementById('info').style.display='table'; };
+function hideadv() { /*
+ document.getElementById('damncookies').style.display='none';
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*3600*1000));
+	var expires = " expires=" + d.toUTCString();
+	document.cookie = "hidecookied=true;" + expires + "; path=/"; */ };
+</script>
+</head>
+
+<body style="height: 100%; margin: 0; padding: 0; width: 100%" onresize="currentwidth = window.innerWidth || document.body.clientWidth; currentheight = window.innerHeight || document.body.clientHeight;
+ if (currentwidth < 640 || currentheight < 480) {
+	document.getElementById('DyMenuTab').style.width='100%';
+	document.getElementById('DyMenuTab').style.float='none';
+	document.getElementById('incl_div').align='center';
+	document.getElementById('homelink').innerHTML='Home';
+	if (document.getElementById('lefloat') &amp;&amp; document.getElementById('movecl')) { document.getElementById('lefloat').style.display='none'; document.getElementById('movecl').style.display='table'; }; }
+ else {
+	document.getElementById('DyMenuTab').style.width='288px';
+	document.getElementById('DyMenuTab').style.float='left';
+	document.getElementById('incl_div').align='justify';
+	if (homelinkname) { document.getElementById('homelink').innerHTML = homelinkname; };
+	if (document.getElementById('lefloat') &amp;&amp; document.getElementById('movecl')) { document.getElementById('movecl').style.display='none'; document.getElementById('lefloat').style.display='table'; }; };
+ if (currentwidth < 640) { document.getElementById('thtopbar').style.fontSize='9pt'; }
+ else { document.getElementById('thtopbar').style.fontSize='11pt'; };" onscroll="if (window.pageYOffset < 86) { document.getElementById('mobimenu').style.display='none';
+		document.getElementById('label0').style.display='none'; }
+	else if (!opened &amp;&amp; (window.screen.width < 640 || window.screen.height < 480 || currentwidth < 480 || currentheight < 360)) { document.getElementById('mobimenu').style.display='table'; };
+ if (window.pageYOffset >= 86 &amp;&amp; !mobi) { document.getElementById('label0').style.display='inline'; };
+ /* if(dc<2)hideadv(); */"><!--body onclick="if (dc) { document.getElementById('damncookies').style.display='none'; dc=2; };"-->
+
+<!--head-->
+<table id="mytoptab" style="width: 100%; height: 86px; position: fixed; z-index: 3; top: 0; left: 0; bottom: 0; right: 0; background-color: SkyBlue;">
+	<tbody><tr id="t_header"><th rowspan="2" style="padding: 0 !important; width: 80px; padding: 8px; background-image: url('../images/skin/logo/rotom-dex.png'); background-repeat: no-repeat; background-position: center center; border-right: 1px solid DeepSkyBlue;">
+<img alt="Logo" src="../images/skin/logo/mew2.gif" width="64" height="80"></th><th style="text-align: left; padding: 0; border-bottom: 1px solid DeepSkyBlue; font-size: 11pt;"><b style="color: #316AC5; text-shadow: 2px 2px 8px white;">&nbsp; Pokencyclopedia.info</b></th></tr>
+	<tr>
+		<th id="thtopbar" style="text-align: left; line-height: 222%; height: 56px; padding: 3px 0px 3px 6px; font-size: 11pt;">
+		<span style="white-space: nowrap;">
+		<a id="label0" href="#" style="display: none;"><span style="display: inline-block; transform: rotate(270deg); background-color: transparent !important">➜</span></a>
+		<a class="topbar" href="index.php">Home</a>
+		<a class="topbar" href="index.php?id=pokedex">Pokédex</a>
+		<a class="topbar" href="index.php?id=sprites">Sprites</a></span>
+		<span style="white-space: nowrap;">
+		<a class="topbar" href="index.php?id=iv-calc">IV-Calc</a>
+		<a class="topbar" href="index.php?id=damage">Damage&nbsp;Calc.</a>
+		<a class="topbar" href="index.php?id=types">Type/Type</a></span></th>
+	</tr>
+</tbody></table>
+<table id="mobimenu" style="width: 56px; height: 56px; position: fixed; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; display: none;">
+	<tbody><tr>
+		<th style="border-bottom-right-radius: 40px; background-color: rgba(255, 255, 255, 0.5); padding-top: 4px; padding-left: 4px;">
+		<a class="img" href="#" onclick="document.getElementById('DyMenuTab').style.display='table'; document.getElementById('mobimenu').style.display='none'; opened=1;" title="MENU">
+		<img alt="MENU" src="../images/skin/menuop.png" width="48" height="48"></a></th>
+	</tr>
+</tbody></table>
+
+<script type="text/javascript">
+if (window.pageYOffset < 86) { document.getElementById('label0').style.display='none'; };
+if (window.screen.width < 640 || window.screen.height < 480 || currentwidth < 480 || currentheight < 360) {
+	document.getElementById('t_header').innerHTML='<th rowspan="2" style="width: 56px; padding: 4px; border-right: 1px solid DeepSkyBlue;"><a class="img" href="#" onclick="document.getElementById(\'DyMenuTab\').style.display=\'table\';" title="MENU"><img alt="MENU" src="../images/skin/menuop.png" width="48" height="48"></a></th><th style="padding: 0; border-bottom: 1px solid DeepSkyBlue; font-size: 11pt;"><b style="color: #316AC5; text-shadow: 2px 2px 8px white;">www.Pokencyclopedia.info</b></th>';
+	document.getElementById('mytoptab').style.position='absolute';
+	document.getElementById('mobimenu').style.display='table';
+	document.getElementById('label0').style.display='none';
+	mobi = 1; };
+if (window.screen.width < 640 || currentwidth < 640) { document.getElementById('thtopbar').style.fontSize='9pt'; };
+</script>
+
+<!--body-->
+<table id="mypagtab" style="width: 100%; position: relative; z-index: 1; top: 86px; left: 0; bottom: 0; right: 0;">
+	<tbody><tr>
+		<td id="td1" style="padding: 8px; text-align: left;">
+		<div id="cli" style="text-align: left; line-height: 150%; margin-top: 0; margin-left: 0; margin-bottom: 2px; margin-right: 0; padding: 8px; border-top-left-radius: 24px; border-top-right-radius: 24px; color: #316AC5; background-color: white;">
+			<span style="display: inline-table; float: right; margin-right: 8px; font-size: 12pt; text-decoration: none;">
+				<a class="img" title="English" href="../en/index.php?id=sprites/gen1/spr_yellow_gbc"><img alt="[EN]" src="../images/flags/en.png" width="16" height="16"></a>
+				<a class="img" title="Italiano" href="../it/index.php?id=sprites/gen1/spr_yellow_gbc"><img alt="[IT]" src="../images/flags/it.png" width="16" height="16"></a>
+				<a class="img" title="Français" href="../fr/index.php?id=sprites/gen1/spr_yellow_gbc"><img alt="[FR]" src="../images/flags/fr.png" width="16" height="16"></a>
+				<a class="img" title="Deutsch" href="../de/index.php?id=sprites/gen1/spr_yellow_gbc"><img alt="[DE]" src="../images/flags/de.png" width="16" height="16"></a>
+				<a class="img" title="Español" href="../es/index.php?id=sprites/gen1/spr_yellow_gbc"><img alt="[ES]" src="../images/flags/es.png" width="16" height="16"></a></span>
+		<a class="img" href="index.php"><img alt="Home" src="../images/home-monochrome-icon.png" style="vertical-align: text-bottom; margin-left: 16px;" width="16" height="16">
+		</a><a id="homelink" href="index.php">Home - Pokencyclopedia.info</a>&nbsp;&gt; <a href="index.php?id=sprites">SpriteDex</a>&nbsp;&gt; <a href="index.php?id=sprites/gen1">Gen.&nbsp;I</a>&nbsp;&gt; <a href="index.php?id=sprites/gen1/spr_yellow_gbc">Sprites Pokémon Yellow Game&nbsp;Boy&nbsp;Color</a>&nbsp;</div>
+<script type="text/javascript">homelinkname = document.getElementById('homelink').innerHTML;</script>
+
+<div style="width: 100%; display: table; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; color: black; background-color: white;">
+
+<table id="DyMenuTab" style="width: 288px; display: table; float: left; vertical-align: top; background-color: white;">
+<caption id="DyMenuCap"></caption>
+<tbody><tr><td style="padding: 8px;">
+
+ <div style="border: 1px solid #316AC5; border-radius: 16px;">
+	<table id="intab" style="width: 100%; color: #316AC5;">
+<tbody><tr><td style="padding: 8px 4px;"><hr style="width: 252px; border: 0; margin: -1px;"><b><a href="index.php?id=sprites"><i><span style="font-style: normal;">../Sprites</span></i></a></b></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_green_gb">Sprites Pokémon <span style="color: green">Green</span> <!--gb-->Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_green_supergb">Sprites Pokémon <span style="color: green">Green</span> <!--gb2-->Super&nbsp;Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_green_gb">Back Sprites Pokémon <span style="color: green">Green</span> <!--gb-->Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_green_supergb">Back Sprites Pokémon <span style="color: green">Green</span> <!--gb2-->Super&nbsp;Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_red-blue_gb">Sprites Pokémon <span style="color: red">Red</span> and <span style="color: blue">Blue</span> <!--gb-->Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_red-blue_supergb">Sprites Pokémon <span style="color: red">Red</span> and <span style="color: blue">Blue</span> <!--gb2-->Super&nbsp;Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_red-blue_gb">Back Sprites Pokémon <span style="color: red">Red</span> and <span style="color: blue">Blue</span> <!--gb-->Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_red-blue_supergb">Back Sprites Pokémon <span style="color: red">Red</span> and <span style="color: blue">Blue</span> <!--gb2-->Super&nbsp;Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_yellow_gb">Sprites Pokémon <span style="color: darkorange">Yellow</span> <!--gb-->Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_yellow_supergb">Sprites Pokémon <span style="color: darkorange">Yellow</span> <!--gb2-->Super&nbsp;Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr_yellow_gbc"><i>Sprites Pokémon <span style="color: darkorange">Yellow</span> <!--gbc-->Game&nbsp;Boy&nbsp;<b><span style="color:#B80A41">C</span><span style="color:#4E4BA8">o</span><span style="color:#6EB122">l</span><span style="color:#DAAC06">o</span><span style="color:#00938A">r</span></b></i></a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_yellow_gb">Back Sprites Pokémon <span style="color: darkorange">Yellow</span> <!--gb-->Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_yellow_supergb">Back Sprites Pokémon <span style="color: darkorange">Yellow</span> <!--gb2-->Super&nbsp;Game&nbsp;Boy</a></td></tr>
+<tr><td style="padding: 8px 4px; border-top: 1px solid #316AC5;"><a href="index.php?id=sprites/gen1/spr-b_yellow_gbc">Back Sprites Pokémon <span style="color: darkorange">Yellow</span> <!--gbc-->Game&nbsp;Boy&nbsp;<b><span style="color:#B80A41">C</span><span style="color:#4E4BA8">o</span><span style="color:#6EB122">l</span><span style="color:#DAAC06">o</span><span style="color:#00938A">r</span></b></a></td></tr>
+	</tbody></table>
+ </div>
+</td></tr></tbody></table>
+
+<div id="incl_div" style="color: black !important" align="justify">
+<p class="stitle"><a class="img" href="index.php?id=sprites/gen1"><img alt="../" src="../images/goto-parent-directory.png" style="margin-bottom: 2px;" width="16" height="16"></a>
+<b><!--s_0-->Sprites Pokémon <span style="color: darkorange">Yellow</span> (<!--gbc-->Game&nbsp;Boy&nbsp;<b><span style="color:#B80A41">C</span><span style="color:#4E4BA8">o</span><span style="color:#6EB122">l</span><span style="color:#DAAC06">o</span><span style="color:#00938A">r</span></b>)</b></p>
+<div id="spr_dump">
+
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#001 Bulbasaur" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_001.png"></td></tr>
+<tr><td><a target="INFrame" title="#001 Bulbasaur, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./001&amp;lang=en&amp;secretid=daadd548b308fbb1031badd628250608" onclick="dotinfo()">Bulbasaur</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#002 Ivysaur" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_002.png"></td></tr>
+<tr><td><a target="INFrame" title="#002 Ivysaur, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./002&amp;lang=en&amp;secretid=d8473b8bd676e492ad09659b8ffcebb5" onclick="dotinfo()">Ivysaur</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#003 Venusaur" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_003.png"></td></tr>
+<tr><td><a target="INFrame" title="#003 Venusaur, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./003&amp;lang=en&amp;secretid=94e723ff03e994271494662040fa9336" onclick="dotinfo()">Venusaur</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#004 Charmander" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_004.png"></td></tr>
+<tr><td><a target="INFrame" title="#004 Charmander, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./004&amp;lang=en&amp;secretid=5682cc9d2db5c6f5b5814f415c6916a9" onclick="dotinfo()">Charmander</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#005 Charmeleon" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_005.png"></td></tr>
+<tr><td><a target="INFrame" title="#005 Charmeleon, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./005&amp;lang=en&amp;secretid=ca39ace6704d4cc2fd46a2fd752accbd" onclick="dotinfo()">Charmeleon</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#006 Charizard" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_006.png"></td></tr>
+<tr><td><a target="INFrame" title="#006 Charizard, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./006&amp;lang=en&amp;secretid=5c6be9b57567b8da9875dd97088115ec" onclick="dotinfo()">Charizard</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#007 Squirtle" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_007.png"></td></tr>
+<tr><td><a target="INFrame" title="#007 Squirtle, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./007&amp;lang=en&amp;secretid=2b1f32efe12bfcc05f367cbf2070266e" onclick="dotinfo()">Squirtle</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#008 Wartortle" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_008.png"></td></tr>
+<tr><td><a target="INFrame" title="#008 Wartortle, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./008&amp;lang=en&amp;secretid=50ddf3792f6716a3981426fbca16102e" onclick="dotinfo()">Wartortle</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#009 Blastoise" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_009.png"></td></tr>
+<tr><td><a target="INFrame" title="#009 Blastoise, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./009&amp;lang=en&amp;secretid=366397232d3023dd6e5025f3c97e0173" onclick="dotinfo()">Blastoise</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#010 Caterpie" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_010.png"></td></tr>
+<tr><td><a target="INFrame" title="#010 Caterpie, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./010&amp;lang=en&amp;secretid=6a3a4963df61f8b1910c759af477c040" onclick="dotinfo()">Caterpie</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#011 Metapod" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_011.png"></td></tr>
+<tr><td><a target="INFrame" title="#011 Metapod, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./011&amp;lang=en&amp;secretid=7ade77f489fa7b3c6e7fd0db22240356" onclick="dotinfo()">Metapod</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#012 Butterfree" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_012.png"></td></tr>
+<tr><td><a target="INFrame" title="#012 Butterfree, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./012&amp;lang=en&amp;secretid=d834b3fb30e1ed3aff76abda62ec4b05" onclick="dotinfo()">Butterfree</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#013 Weedle" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_013.png"></td></tr>
+<tr><td><a target="INFrame" title="#013 Weedle, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./013&amp;lang=en&amp;secretid=fd7b4b022cd0527e359264cb32cf6278" onclick="dotinfo()">Weedle</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#014 Kakuna" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_014.png"></td></tr>
+<tr><td><a target="INFrame" title="#014 Kakuna, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./014&amp;lang=en&amp;secretid=934ca7896809a005b363c6e11346624c" onclick="dotinfo()">Kakuna</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#015 Beedrill" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_015.png"></td></tr>
+<tr><td><a target="INFrame" title="#015 Beedrill, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./015&amp;lang=en&amp;secretid=08dafff89e2143951dfd348e72db4b34" onclick="dotinfo()">Beedrill</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#016 Pidgey" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_016.png"></td></tr>
+<tr><td><a target="INFrame" title="#016 Pidgey, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./016&amp;lang=en&amp;secretid=dc3e16de873365ef5ff5208815c1eb1e" onclick="dotinfo()">Pidgey</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#017 Pidgeotto" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_017.png"></td></tr>
+<tr><td><a target="INFrame" title="#017 Pidgeotto, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./017&amp;lang=en&amp;secretid=a007c9bb58cac499f5b45f5cfabdc66b" onclick="dotinfo()">Pidgeotto</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#018 Pidgeot" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_018.png"></td></tr>
+<tr><td><a target="INFrame" title="#018 Pidgeot, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./018&amp;lang=en&amp;secretid=1729e4ca21e2922b7379a8e7dd549df5" onclick="dotinfo()">Pidgeot</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#019 Rattata" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_019.png"></td></tr>
+<tr><td><a target="INFrame" title="#019 Rattata, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./019&amp;lang=en&amp;secretid=5596577763c1049dd77bc7a47270d91a" onclick="dotinfo()">Rattata</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#020 Raticate" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_020.png"></td></tr>
+<tr><td><a target="INFrame" title="#020 Raticate, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./020&amp;lang=en&amp;secretid=521b2955957c23306d73e524d7376e15" onclick="dotinfo()">Raticate</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#021 Spearow" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_021.png"></td></tr>
+<tr><td><a target="INFrame" title="#021 Spearow, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./021&amp;lang=en&amp;secretid=8e0d53bfcedced0246d3b0bd572d7375" onclick="dotinfo()">Spearow</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#022 Fearow" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_022.png"></td></tr>
+<tr><td><a target="INFrame" title="#022 Fearow, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./022&amp;lang=en&amp;secretid=606aba01a596d8d7f1b97b5e3c9dfc2b" onclick="dotinfo()">Fearow</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#023 Ekans" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_023.png"></td></tr>
+<tr><td><a target="INFrame" title="#023 Ekans, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./023&amp;lang=en&amp;secretid=4555af01d74b25b7fcc6e37eb84fcca8" onclick="dotinfo()">Ekans</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#024 Arbok" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_024.png"></td></tr>
+<tr><td><a target="INFrame" title="#024 Arbok, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./024&amp;lang=en&amp;secretid=0ccd2d112bf0a85c6d8537d0bb867b87" onclick="dotinfo()">Arbok</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#025 Pikachu" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_025.png"></td></tr>
+<tr><td><a target="INFrame" title="#025 Pikachu, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./025&amp;lang=en&amp;secretid=a020bd4a4027aa3dd1fa97ab66be8a0f" onclick="dotinfo()">Pikachu</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#026 Raichu" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_026.png"></td></tr>
+<tr><td><a target="INFrame" title="#026 Raichu, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./026&amp;lang=en&amp;secretid=ec64577f1d2c6423887140c5ec372d39" onclick="dotinfo()">Raichu</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#027 Sandshrew" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_027.png"></td></tr>
+<tr><td><a target="INFrame" title="#027 Sandshrew, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./027&amp;lang=en&amp;secretid=8fd81f4eef8487ca8bfa93c774d55709" onclick="dotinfo()">Sandshrew</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#028 Sandslash" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_028.png"></td></tr>
+<tr><td><a target="INFrame" title="#028 Sandslash, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./028&amp;lang=en&amp;secretid=3a6b5eda527741223120a272e7101fdd" onclick="dotinfo()">Sandslash</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#029 Nidoran♀" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_029.png"></td></tr>
+<tr><td><a target="INFrame" title="#029 Nidoran♀, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./029&amp;lang=en&amp;secretid=56d166c24764bd697cab355b51ebad23" onclick="dotinfo()">Nidoran♀</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#030 Nidorina" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_030.png"></td></tr>
+<tr><td><a target="INFrame" title="#030 Nidorina, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./030&amp;lang=en&amp;secretid=56f8d7904fa5929a3127b990e8d1e0dd" onclick="dotinfo()">Nidorina</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#031 Nidoqueen" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_031.png"></td></tr>
+<tr><td><a target="INFrame" title="#031 Nidoqueen, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./031&amp;lang=en&amp;secretid=92973c5976d06cd254f38b8d512c0448" onclick="dotinfo()">Nidoqueen</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#032 Nidoran♂" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_032.png"></td></tr>
+<tr><td><a target="INFrame" title="#032 Nidoran♂, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./032&amp;lang=en&amp;secretid=6cb73ec6545d48c9d9d0903c44035078" onclick="dotinfo()">Nidoran♂</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#033 Nidorino" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_033.png"></td></tr>
+<tr><td><a target="INFrame" title="#033 Nidorino, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./033&amp;lang=en&amp;secretid=bca1dce0165e14b21564cd8ae463e4ba" onclick="dotinfo()">Nidorino</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#034 Nidoking" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_034.png"></td></tr>
+<tr><td><a target="INFrame" title="#034 Nidoking, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./034&amp;lang=en&amp;secretid=58604d5824cc87a68b9d75da01dd61bc" onclick="dotinfo()">Nidoking</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#035 Clefairy" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_035.png"></td></tr>
+<tr><td><a target="INFrame" title="#035 Clefairy, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./035&amp;lang=en&amp;secretid=8e73fa842722bdd9b21b500e444dbc20" onclick="dotinfo()">Clefairy</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#036 Clefable" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_036.png"></td></tr>
+<tr><td><a target="INFrame" title="#036 Clefable, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./036&amp;lang=en&amp;secretid=2a1379ae31f432a92d95d3418c016ffd" onclick="dotinfo()">Clefable</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#037 Vulpix" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_037.png"></td></tr>
+<tr><td><a target="INFrame" title="#037 Vulpix, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./037&amp;lang=en&amp;secretid=4aadf59d46988efe3a6da286bd4d038b" onclick="dotinfo()">Vulpix</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#038 Ninetales" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_038.png"></td></tr>
+<tr><td><a target="INFrame" title="#038 Ninetales, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./038&amp;lang=en&amp;secretid=1d989e27d5181f18af5d2e59c343b7a1" onclick="dotinfo()">Ninetales</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#039 Jigglypuff" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_039.png"></td></tr>
+<tr><td><a target="INFrame" title="#039 Jigglypuff, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./039&amp;lang=en&amp;secretid=844b0a67142be0191bd86cfab5885908" onclick="dotinfo()">Jigglypuff</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#040 Wigglytuff" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_040.png"></td></tr>
+<tr><td><a target="INFrame" title="#040 Wigglytuff, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./040&amp;lang=en&amp;secretid=bb333b2968f44926cf14ec44998648f6" onclick="dotinfo()">Wigglytuff</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#041 Zubat" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_041.png"></td></tr>
+<tr><td><a target="INFrame" title="#041 Zubat, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./041&amp;lang=en&amp;secretid=c7b783379a80f495f63122186b69d2e6" onclick="dotinfo()">Zubat</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#042 Golbat" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_042.png"></td></tr>
+<tr><td><a target="INFrame" title="#042 Golbat, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./042&amp;lang=en&amp;secretid=9be1f1e37d13a57eb2cf743474a7a380" onclick="dotinfo()">Golbat</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#043 Oddish" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_043.png"></td></tr>
+<tr><td><a target="INFrame" title="#043 Oddish, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./043&amp;lang=en&amp;secretid=98595663aef332b270b5982bb67e0d80" onclick="dotinfo()">Oddish</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#044 Gloom" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_044.png"></td></tr>
+<tr><td><a target="INFrame" title="#044 Gloom, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./044&amp;lang=en&amp;secretid=058e428c19a76d7823e91b61ae8ed036" onclick="dotinfo()">Gloom</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#045 Vileplume" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_045.png"></td></tr>
+<tr><td><a target="INFrame" title="#045 Vileplume, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./045&amp;lang=en&amp;secretid=c7cc01e8f04760d106862c5976d8ccac" onclick="dotinfo()">Vileplume</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#046 Paras" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_046.png"></td></tr>
+<tr><td><a target="INFrame" title="#046 Paras, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./046&amp;lang=en&amp;secretid=e0ce2db9d1bc90b7cede11dcc490c97d" onclick="dotinfo()">Paras</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#047 Parasect" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_047.png"></td></tr>
+<tr><td><a target="INFrame" title="#047 Parasect, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./047&amp;lang=en&amp;secretid=919cc82db48e0a97a9838f4580560d1f" onclick="dotinfo()">Parasect</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#048 Venonat" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_048.png"></td></tr>
+<tr><td><a target="INFrame" title="#048 Venonat, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./048&amp;lang=en&amp;secretid=c313b4db7f9fbceb374ba1bca284ca49" onclick="dotinfo()">Venonat</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#049 Venomoth" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_049.png"></td></tr>
+<tr><td><a target="INFrame" title="#049 Venomoth, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./049&amp;lang=en&amp;secretid=8d26a35ec053e2b136a48b92a030e14a" onclick="dotinfo()">Venomoth</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#050 Diglett" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_050.png"></td></tr>
+<tr><td><a target="INFrame" title="#050 Diglett, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./050&amp;lang=en&amp;secretid=eb34e7624c52a28e2c527b580a725c5b" onclick="dotinfo()">Diglett</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#051 Dugtrio" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_051.png"></td></tr>
+<tr><td><a target="INFrame" title="#051 Dugtrio, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./051&amp;lang=en&amp;secretid=df8af6df29e09619497a4c32ccc7713e" onclick="dotinfo()">Dugtrio</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#052 Meowth" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_052.png"></td></tr>
+<tr><td><a target="INFrame" title="#052 Meowth, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./052&amp;lang=en&amp;secretid=447af4bfc64dfc08a5cd70386c0f590f" onclick="dotinfo()">Meowth</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#053 Persian" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_053.png"></td></tr>
+<tr><td><a target="INFrame" title="#053 Persian, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./053&amp;lang=en&amp;secretid=051e63d0a6c7c224ba17d0878abccc0a" onclick="dotinfo()">Persian</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#054 Psyduck" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_054.png"></td></tr>
+<tr><td><a target="INFrame" title="#054 Psyduck, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./054&amp;lang=en&amp;secretid=6a8c1e827b3e7afccb613759a790884b" onclick="dotinfo()">Psyduck</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#055 Golduck" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_055.png"></td></tr>
+<tr><td><a target="INFrame" title="#055 Golduck, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./055&amp;lang=en&amp;secretid=53dc44b3fe39b57dddbd20d3f1789b53" onclick="dotinfo()">Golduck</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#056 Mankey" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_056.png"></td></tr>
+<tr><td><a target="INFrame" title="#056 Mankey, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./056&amp;lang=en&amp;secretid=48ac26e7cebdce73f27f286e89564a28" onclick="dotinfo()">Mankey</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#057 Primeape" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_057.png"></td></tr>
+<tr><td><a target="INFrame" title="#057 Primeape, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./057&amp;lang=en&amp;secretid=e59feb92f3522db243a739f6e6017014" onclick="dotinfo()">Primeape</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#058 Growlithe" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_058.png"></td></tr>
+<tr><td><a target="INFrame" title="#058 Growlithe, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./058&amp;lang=en&amp;secretid=cd7a42355c04604cd93075ac97396705" onclick="dotinfo()">Growlithe</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#059 Arcanine" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_059.png"></td></tr>
+<tr><td><a target="INFrame" title="#059 Arcanine, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./059&amp;lang=en&amp;secretid=97475db94a128015f08272459770d490" onclick="dotinfo()">Arcanine</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#060 Poliwag" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_060.png"></td></tr>
+<tr><td><a target="INFrame" title="#060 Poliwag, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./060&amp;lang=en&amp;secretid=62d7c3d392bb5553f4f7591e40c43bd8" onclick="dotinfo()">Poliwag</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#061 Poliwhirl" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_061.png"></td></tr>
+<tr><td><a target="INFrame" title="#061 Poliwhirl, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./061&amp;lang=en&amp;secretid=a4af0a1522619057fb938f8a93e9c182" onclick="dotinfo()">Poliwhirl</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#062 Poliwrath" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_062.png"></td></tr>
+<tr><td><a target="INFrame" title="#062 Poliwrath, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./062&amp;lang=en&amp;secretid=345bccd58142919e233744f817bdc4fb" onclick="dotinfo()">Poliwrath</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#063 Abra" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_063.png"></td></tr>
+<tr><td><a target="INFrame" title="#063 Abra, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./063&amp;lang=en&amp;secretid=396b7adef54777f8505ca23523a0bbd0" onclick="dotinfo()">Abra</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#064 Kadabra" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_064.png"></td></tr>
+<tr><td><a target="INFrame" title="#064 Kadabra, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./064&amp;lang=en&amp;secretid=c3027cf96168a97fed75237fe9419864" onclick="dotinfo()">Kadabra</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#065 Alakazam" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_065.png"></td></tr>
+<tr><td><a target="INFrame" title="#065 Alakazam, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./065&amp;lang=en&amp;secretid=6d5102a107ced3b7cf3ef18add8fe714" onclick="dotinfo()">Alakazam</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#066 Machop" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_066.png"></td></tr>
+<tr><td><a target="INFrame" title="#066 Machop, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./066&amp;lang=en&amp;secretid=416974b98341fc19c5fe19c3b67dab13" onclick="dotinfo()">Machop</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#067 Machoke" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_067.png"></td></tr>
+<tr><td><a target="INFrame" title="#067 Machoke, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./067&amp;lang=en&amp;secretid=0fd494f45338cbf5ab823e1504382e82" onclick="dotinfo()">Machoke</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#068 Machamp" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_068.png"></td></tr>
+<tr><td><a target="INFrame" title="#068 Machamp, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./068&amp;lang=en&amp;secretid=e1b937beed8f8e6f7dd794ad64188822" onclick="dotinfo()">Machamp</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#069 Bellsprout" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_069.png"></td></tr>
+<tr><td><a target="INFrame" title="#069 Bellsprout, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./069&amp;lang=en&amp;secretid=68195d5eba9e123d9f509ed6e4536108" onclick="dotinfo()">Bellsprout</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#070 Weepinbell" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_070.png"></td></tr>
+<tr><td><a target="INFrame" title="#070 Weepinbell, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./070&amp;lang=en&amp;secretid=cb9f4e42897b9971a138e6f05cf0a638" onclick="dotinfo()">Weepinbell</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#071 Victreebel" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_071.png"></td></tr>
+<tr><td><a target="INFrame" title="#071 Victreebel, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./071&amp;lang=en&amp;secretid=6aab8b790d403b39efc0ee601c4a0349" onclick="dotinfo()">Victreebel</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#072 Tentacool" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_072.png"></td></tr>
+<tr><td><a target="INFrame" title="#072 Tentacool, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./072&amp;lang=en&amp;secretid=73185028a1ba798b8a1ffccc6ef0411c" onclick="dotinfo()">Tentacool</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#073 Tentacruel" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_073.png"></td></tr>
+<tr><td><a target="INFrame" title="#073 Tentacruel, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./073&amp;lang=en&amp;secretid=61ddfbcb45fc8e1417141fe1a8d1e57a" onclick="dotinfo()">Tentacruel</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#074 Geodude" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_074.png"></td></tr>
+<tr><td><a target="INFrame" title="#074 Geodude, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./074&amp;lang=en&amp;secretid=cf8437814246334e68d318ff84a966f6" onclick="dotinfo()">Geodude</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#075 Graveler" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_075.png"></td></tr>
+<tr><td><a target="INFrame" title="#075 Graveler, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./075&amp;lang=en&amp;secretid=4307055b14279a7599bbbc6f4866697d" onclick="dotinfo()">Graveler</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#076 Golem" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_076.png"></td></tr>
+<tr><td><a target="INFrame" title="#076 Golem, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./076&amp;lang=en&amp;secretid=afc80e454e19fb4b698cdb255054bd7e" onclick="dotinfo()">Golem</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#077 Ponyta" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_077.png"></td></tr>
+<tr><td><a target="INFrame" title="#077 Ponyta, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./077&amp;lang=en&amp;secretid=9377abe8da7fea1e8c1ab1b091e04e90" onclick="dotinfo()">Ponyta</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#078 Rapidash" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_078.png"></td></tr>
+<tr><td><a target="INFrame" title="#078 Rapidash, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./078&amp;lang=en&amp;secretid=5372f29436cf0e644158bc0760806d76" onclick="dotinfo()">Rapidash</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#079 Slowpoke" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_079.png"></td></tr>
+<tr><td><a target="INFrame" title="#079 Slowpoke, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./079&amp;lang=en&amp;secretid=e22381ad91bcc7cb7df51b6407ba6e94" onclick="dotinfo()">Slowpoke</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#080 Slowbro" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_080.png"></td></tr>
+<tr><td><a target="INFrame" title="#080 Slowbro, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./080&amp;lang=en&amp;secretid=e8b15c4ad72a0b7e4bc8679dade8fb9d" onclick="dotinfo()">Slowbro</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#081 Magnemite" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_081.png"></td></tr>
+<tr><td><a target="INFrame" title="#081 Magnemite, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./081&amp;lang=en&amp;secretid=e814d5b7e092d5cf76d0e6a1e95ab575" onclick="dotinfo()">Magnemite</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#082 Magneton" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_082.png"></td></tr>
+<tr><td><a target="INFrame" title="#082 Magneton, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./082&amp;lang=en&amp;secretid=d356b381c07749d05a249da25f6ba3b8" onclick="dotinfo()">Magneton</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#083 Farfetch’d" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_083.png"></td></tr>
+<tr><td><a target="INFrame" title="#083 Farfetch’d, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./083&amp;lang=en&amp;secretid=8165c088770eb1a65439e6c31b992701" onclick="dotinfo()">Farfetch’d</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#084 Doduo" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_084.png"></td></tr>
+<tr><td><a target="INFrame" title="#084 Doduo, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./084&amp;lang=en&amp;secretid=f2224c3123a49641e69f884d8dc5739b" onclick="dotinfo()">Doduo</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#085 Dodrio" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_085.png"></td></tr>
+<tr><td><a target="INFrame" title="#085 Dodrio, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./085&amp;lang=en&amp;secretid=c9be9465cdff7f89adb0d6008dedca11" onclick="dotinfo()">Dodrio</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#086 Seel" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_086.png"></td></tr>
+<tr><td><a target="INFrame" title="#086 Seel, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./086&amp;lang=en&amp;secretid=54a3bbd49a02cd6cec761494f2c60355" onclick="dotinfo()">Seel</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#087 Dewgong" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_087.png"></td></tr>
+<tr><td><a target="INFrame" title="#087 Dewgong, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./087&amp;lang=en&amp;secretid=af51de3f0b1102944b98aa3ac1c5b75d" onclick="dotinfo()">Dewgong</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#088 Grimer" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_088.png"></td></tr>
+<tr><td><a target="INFrame" title="#088 Grimer, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./088&amp;lang=en&amp;secretid=422fbb77344f206a431a547ed16d749a" onclick="dotinfo()">Grimer</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#089 Muk" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_089.png"></td></tr>
+<tr><td><a target="INFrame" title="#089 Muk, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./089&amp;lang=en&amp;secretid=f2fd3caf4193e911e6e51034e0851c04" onclick="dotinfo()">Muk</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#090 Shellder" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_090.png"></td></tr>
+<tr><td><a target="INFrame" title="#090 Shellder, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./090&amp;lang=en&amp;secretid=538272f8c9688bccc10246d4492e9d23" onclick="dotinfo()">Shellder</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#091 Cloyster" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_091.png"></td></tr>
+<tr><td><a target="INFrame" title="#091 Cloyster, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./091&amp;lang=en&amp;secretid=26add33c2f5738f865d1f0269ef9f87c" onclick="dotinfo()">Cloyster</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#092 Gastly" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_092.png"></td></tr>
+<tr><td><a target="INFrame" title="#092 Gastly, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./092&amp;lang=en&amp;secretid=edee7ce66e2efe80f64e9dea59261e73" onclick="dotinfo()">Gastly</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#093 Haunter" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_093.png"></td></tr>
+<tr><td><a target="INFrame" title="#093 Haunter, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./093&amp;lang=en&amp;secretid=ae7503c49803e3c0ce4bd10bac0a823e" onclick="dotinfo()">Haunter</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#094 Gengar" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_094.png"></td></tr>
+<tr><td><a target="INFrame" title="#094 Gengar, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./094&amp;lang=en&amp;secretid=aa38dea17cd237dd63704ec01289dda4" onclick="dotinfo()">Gengar</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#095 Onix" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_095.png"></td></tr>
+<tr><td><a target="INFrame" title="#095 Onix, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./095&amp;lang=en&amp;secretid=274bc9d6f4d55a9c6bab1a35c8fd3839" onclick="dotinfo()">Onix</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#096 Drowzee" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_096.png"></td></tr>
+<tr><td><a target="INFrame" title="#096 Drowzee, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./096&amp;lang=en&amp;secretid=63dbd9f34ebedbd2f9aaaac369bbc275" onclick="dotinfo()">Drowzee</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#097 Hypno" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_097.png"></td></tr>
+<tr><td><a target="INFrame" title="#097 Hypno, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./097&amp;lang=en&amp;secretid=afd22e215e2facd168355c9458591df7" onclick="dotinfo()">Hypno</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#098 Krabby" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_098.png"></td></tr>
+<tr><td><a target="INFrame" title="#098 Krabby, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./098&amp;lang=en&amp;secretid=bd29e694fde5e2abea4b74fe5a85029c" onclick="dotinfo()">Krabby</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#099 Kingler" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_099.png"></td></tr>
+<tr><td><a target="INFrame" title="#099 Kingler, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./099&amp;lang=en&amp;secretid=c89faf254e10ebda1b9d83066364823a" onclick="dotinfo()">Kingler</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#100 Voltorb" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_100.png"></td></tr>
+<tr><td><a target="INFrame" title="#100 Voltorb, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./100&amp;lang=en&amp;secretid=6db9481a2c7e4053e81ee64af6495906" onclick="dotinfo()">Voltorb</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#101 Electrode" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_101.png"></td></tr>
+<tr><td><a target="INFrame" title="#101 Electrode, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./101&amp;lang=en&amp;secretid=f051e4006841178a119bdfe860f9e030" onclick="dotinfo()">Electrode</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#102 Exeggcute" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_102.png"></td></tr>
+<tr><td><a target="INFrame" title="#102 Exeggcute, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./102&amp;lang=en&amp;secretid=48339f747457f1d1858f26b6b80f2fe3" onclick="dotinfo()">Exeggcute</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#103 Exeggutor" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_103.png"></td></tr>
+<tr><td><a target="INFrame" title="#103 Exeggutor, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./103&amp;lang=en&amp;secretid=4af6cecd40b7b68cda3420ea1120ccf9" onclick="dotinfo()">Exeggutor</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#104 Cubone" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_104.png"></td></tr>
+<tr><td><a target="INFrame" title="#104 Cubone, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./104&amp;lang=en&amp;secretid=908171b0c42a25dc922b244055e3fbc4" onclick="dotinfo()">Cubone</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#105 Marowak" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_105.png"></td></tr>
+<tr><td><a target="INFrame" title="#105 Marowak, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./105&amp;lang=en&amp;secretid=18dce71a1a854b3a77a45fa4c88e60a5" onclick="dotinfo()">Marowak</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#106 Hitmonlee" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_106.png"></td></tr>
+<tr><td><a target="INFrame" title="#106 Hitmonlee, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./106&amp;lang=en&amp;secretid=f1c3f561dcf79e2594110e1addd07ae5" onclick="dotinfo()">Hitmonlee</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#107 Hitmonchan" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_107.png"></td></tr>
+<tr><td><a target="INFrame" title="#107 Hitmonchan, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./107&amp;lang=en&amp;secretid=24061ece952368e81bdbd165b2654cdd" onclick="dotinfo()">Hitmonchan</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#108 Lickitung" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_108.png"></td></tr>
+<tr><td><a target="INFrame" title="#108 Lickitung, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./108&amp;lang=en&amp;secretid=339838c16d5fe4ce7d218336fef2f358" onclick="dotinfo()">Lickitung</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#109 Koffing" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_109.png"></td></tr>
+<tr><td><a target="INFrame" title="#109 Koffing, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./109&amp;lang=en&amp;secretid=bd7a74563106c2cc0eccd3f8ad183658" onclick="dotinfo()">Koffing</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#110 Weezing" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_110.png"></td></tr>
+<tr><td><a target="INFrame" title="#110 Weezing, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./110&amp;lang=en&amp;secretid=20fefd3d06bccb22612b3d52884c0a04" onclick="dotinfo()">Weezing</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#111 Rhyhorn" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_111.png"></td></tr>
+<tr><td><a target="INFrame" title="#111 Rhyhorn, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./111&amp;lang=en&amp;secretid=751867b2ab111715d399fa4d85c6ecd2" onclick="dotinfo()">Rhyhorn</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#112 Rhydon" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_112.png"></td></tr>
+<tr><td><a target="INFrame" title="#112 Rhydon, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./112&amp;lang=en&amp;secretid=b6bdc5d60214d3b5dd823cdab615ae34" onclick="dotinfo()">Rhydon</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#113 Chansey" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_113.png"></td></tr>
+<tr><td><a target="INFrame" title="#113 Chansey, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./113&amp;lang=en&amp;secretid=2e62c94ad24d85050d4ea4b435ff8249" onclick="dotinfo()">Chansey</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#114 Tangela" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_114.png"></td></tr>
+<tr><td><a target="INFrame" title="#114 Tangela, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./114&amp;lang=en&amp;secretid=2139986abea3f83623021617153e195d" onclick="dotinfo()">Tangela</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#115 Kangaskhan" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_115.png"></td></tr>
+<tr><td><a target="INFrame" title="#115 Kangaskhan, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./115&amp;lang=en&amp;secretid=03c978d186229948194b673f4ff76e48" onclick="dotinfo()">Kangaskhan</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#116 Horsea" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_116.png"></td></tr>
+<tr><td><a target="INFrame" title="#116 Horsea, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./116&amp;lang=en&amp;secretid=a669d5f801db6688e26fc9efcab13261" onclick="dotinfo()">Horsea</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#117 Seadra" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_117.png"></td></tr>
+<tr><td><a target="INFrame" title="#117 Seadra, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./117&amp;lang=en&amp;secretid=0c03113bb2da2984aec6ae4d8bef84e5" onclick="dotinfo()">Seadra</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#118 Goldeen" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_118.png"></td></tr>
+<tr><td><a target="INFrame" title="#118 Goldeen, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./118&amp;lang=en&amp;secretid=1f5f8ea0d50a8ad03b8235fc54b1e773" onclick="dotinfo()">Goldeen</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#119 Seaking" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_119.png"></td></tr>
+<tr><td><a target="INFrame" title="#119 Seaking, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./119&amp;lang=en&amp;secretid=e5286e3f35a06f452729b17967b43a78" onclick="dotinfo()">Seaking</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#120 Staryu" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_120.png"></td></tr>
+<tr><td><a target="INFrame" title="#120 Staryu, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./120&amp;lang=en&amp;secretid=b2f5c1330dc339fb02e8657cfbf9e9cd" onclick="dotinfo()">Staryu</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#121 Starmie" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_121.png"></td></tr>
+<tr><td><a target="INFrame" title="#121 Starmie, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./121&amp;lang=en&amp;secretid=2a561fd5a56a1212075dd98683b9c43d" onclick="dotinfo()">Starmie</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#122 Mr. Mime" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_122.png"></td></tr>
+<tr><td><a target="INFrame" title="#122 Mr. Mime, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./122&amp;lang=en&amp;secretid=7c2e957158ff8d861e8f69104d55fa17" onclick="dotinfo()">Mr. Mime</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#123 Scyther" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_123.png"></td></tr>
+<tr><td><a target="INFrame" title="#123 Scyther, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./123&amp;lang=en&amp;secretid=81196f71bb921348f10d7274b2962292" onclick="dotinfo()">Scyther</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#124 Jynx" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_124.png"></td></tr>
+<tr><td><a target="INFrame" title="#124 Jynx, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./124&amp;lang=en&amp;secretid=d3272780559602ccc4890849d288d90f" onclick="dotinfo()">Jynx</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#125 Electabuzz" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_125.png"></td></tr>
+<tr><td><a target="INFrame" title="#125 Electabuzz, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./125&amp;lang=en&amp;secretid=7f952f276322d641bdc2d93fd6e06b84" onclick="dotinfo()">Electabuzz</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#126 Magmar" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_126.png"></td></tr>
+<tr><td><a target="INFrame" title="#126 Magmar, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./126&amp;lang=en&amp;secretid=fed41d0c6c1f6bb430fe058a5559a355" onclick="dotinfo()">Magmar</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#127 Pinsir" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_127.png"></td></tr>
+<tr><td><a target="INFrame" title="#127 Pinsir, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./127&amp;lang=en&amp;secretid=7345ef9d028e7d139568f467a8ce6e2c" onclick="dotinfo()">Pinsir</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#128 Tauros" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_128.png"></td></tr>
+<tr><td><a target="INFrame" title="#128 Tauros, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./128&amp;lang=en&amp;secretid=aa7adb81d6e26fc7cbcf09acecbfc851" onclick="dotinfo()">Tauros</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#129 Magikarp" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_129.png"></td></tr>
+<tr><td><a target="INFrame" title="#129 Magikarp, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./129&amp;lang=en&amp;secretid=39c837e57bb63b896ce470510c5e3fe3" onclick="dotinfo()">Magikarp</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#130 Gyarados" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_130.png"></td></tr>
+<tr><td><a target="INFrame" title="#130 Gyarados, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./130&amp;lang=en&amp;secretid=a267858781e1321f8629b185908f3663" onclick="dotinfo()">Gyarados</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#131 Lapras" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_131.png"></td></tr>
+<tr><td><a target="INFrame" title="#131 Lapras, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./131&amp;lang=en&amp;secretid=974d650b9325f8298ac1adacb8806f53" onclick="dotinfo()">Lapras</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#132 Ditto" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_132.png"></td></tr>
+<tr><td><a target="INFrame" title="#132 Ditto, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./132&amp;lang=en&amp;secretid=7dad224a5e78893fe30fc10306c7b437" onclick="dotinfo()">Ditto</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#133 Eevee" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_133.png"></td></tr>
+<tr><td><a target="INFrame" title="#133 Eevee, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./133&amp;lang=en&amp;secretid=8591b771a19e807ed50093c7ee1ed4aa" onclick="dotinfo()">Eevee</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#134 Vaporeon" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_134.png"></td></tr>
+<tr><td><a target="INFrame" title="#134 Vaporeon, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./134&amp;lang=en&amp;secretid=5a07ea572c0373d85636698376e9fcde" onclick="dotinfo()">Vaporeon</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#135 Jolteon" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_135.png"></td></tr>
+<tr><td><a target="INFrame" title="#135 Jolteon, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./135&amp;lang=en&amp;secretid=3d74e3f4b895b4fb5c30ffb1231c410a" onclick="dotinfo()">Jolteon</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#136 Flareon" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_136.png"></td></tr>
+<tr><td><a target="INFrame" title="#136 Flareon, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./136&amp;lang=en&amp;secretid=6d02c015f8080464b3ca4c23b76f89b2" onclick="dotinfo()">Flareon</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#137 Porygon" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_137.png"></td></tr>
+<tr><td><a target="INFrame" title="#137 Porygon, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./137&amp;lang=en&amp;secretid=cee79bbb0f4b4303f7381d921e650ea7" onclick="dotinfo()">Porygon</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#138 Omanyte" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_138.png"></td></tr>
+<tr><td><a target="INFrame" title="#138 Omanyte, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./138&amp;lang=en&amp;secretid=461e9a1c2acb312501683f40d78ffe43" onclick="dotinfo()">Omanyte</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#139 Omastar" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_139.png"></td></tr>
+<tr><td><a target="INFrame" title="#139 Omastar, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./139&amp;lang=en&amp;secretid=22e180f2579d3f30fff393b0fe55f64e" onclick="dotinfo()">Omastar</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#140 Kabuto" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_140.png"></td></tr>
+<tr><td><a target="INFrame" title="#140 Kabuto, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./140&amp;lang=en&amp;secretid=0140956fe70bf249d8a91b1cac9d5c6a" onclick="dotinfo()">Kabuto</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#141 Kabutops" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_141.png"></td></tr>
+<tr><td><a target="INFrame" title="#141 Kabutops, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./141&amp;lang=en&amp;secretid=07371881bc9cae577f1b8ee732fd1f4c" onclick="dotinfo()">Kabutops</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#142 Aerodactyl" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_142.png"></td></tr>
+<tr><td><a target="INFrame" title="#142 Aerodactyl, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./142&amp;lang=en&amp;secretid=e5786671d9a3db0a7aff0cf27c57f4d2" onclick="dotinfo()">Aerodactyl</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#143 Snorlax" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_143.png"></td></tr>
+<tr><td><a target="INFrame" title="#143 Snorlax, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./143&amp;lang=en&amp;secretid=d95e00162f4ce0e87b799d816632552b" onclick="dotinfo()">Snorlax</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#144 Articuno" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_144.png"></td></tr>
+<tr><td><a target="INFrame" title="#144 Articuno, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./144&amp;lang=en&amp;secretid=faa04d62095fd3364cac39cf45b518fd" onclick="dotinfo()">Articuno</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#145 Zapdos" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_145.png"></td></tr>
+<tr><td><a target="INFrame" title="#145 Zapdos, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./145&amp;lang=en&amp;secretid=5de528ae521467b609b74fef16fb8410" onclick="dotinfo()">Zapdos</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#146 Moltres" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_146.png"></td></tr>
+<tr><td><a target="INFrame" title="#146 Moltres, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./146&amp;lang=en&amp;secretid=7aa0132d0ce68e4095f791dce6d1cde5" onclick="dotinfo()">Moltres</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#147 Dratini" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_147.png"></td></tr>
+<tr><td><a target="INFrame" title="#147 Dratini, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./147&amp;lang=en&amp;secretid=8034cedf8068158d928f75377922a4df" onclick="dotinfo()">Dratini</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#148 Dragonair" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_148.png"></td></tr>
+<tr><td><a target="INFrame" title="#148 Dragonair, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./148&amp;lang=en&amp;secretid=388105f170aaa190649b5a045c57c8ca" onclick="dotinfo()">Dragonair</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#149 Dragonite" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_149.png"></td></tr>
+<tr><td><a target="INFrame" title="#149 Dragonite, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./149&amp;lang=en&amp;secretid=76dbc7e1576b76e3d8709d617df45b3b" onclick="dotinfo()">Dragonite</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#150 Mewtwo" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_150.png"></td></tr>
+<tr><td><a target="INFrame" title="#150 Mewtwo, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./150&amp;lang=en&amp;secretid=202358440a7d7e94974dd9531760c380" onclick="dotinfo()">Mewtwo</a></td></tr></tbody></table>
+<table class="spr" style="display: inline-table;"><tbody><tr><td>
+<img alt="#151 Mew" src="../sprites/gen1/spr_yellow_gbc/spr_y-gbc_151.png"></td></tr>
+<tr><td><a target="INFrame" title="#151 Mew, [+] info…" href="../tools/spr-info.php?id=/gen1/spr_yellow_gbc/./151&amp;lang=en&amp;secretid=6385d05d8d6541d70a30e305384e2608" onclick="dotinfo()">Mew</a></td></tr></tbody></table>
+</div>
+<p style="display: table; width: 100%; text-align: right; margin: 0; border-collapse: separate; border-spacing: 12px; padding: 0; backgroun-color: transparent !important">
+<code>151 images<br>75.92 KiB</code></p></div>
+
+<table id="inf_table" style="width: 100%; margin: 0; ">
+	<tbody><tr>
+		<td id="extlnk" style="width: 50%; vertical-align: top; text-align: left; padding: 0 18px 12px;">
+		<p style="font-size: 8pt; margin: 0 0 3px;">Affiliates:</p>
+		<a class="img" target="_blank" href="http://www.poketown.net"><img alt="Pokétown" src="../images/buttons/poketown.png" width="88" height="31"></a>
+		<a class="img" target="_blank" href="http://pokemon-trainer.com"><img alt="P.Trainer" src="../images/buttons/ptrainer.png" width="88" height="31"></a>
+		<a class="img" target="_blank" href="http://pokeserwis.pl"><img alt="PokeSerwis" src="../images/buttons/pkserwis.png" width="88" height="31"></a>
+		<a class="img" target="_blank" href="http://pwtng.altervista.org"><img alt="PWTNG" src="../images/buttons/pwtng.png" width="88" height="31"></a>
+		<a class="img" target="_blank" href="http://pokemonfourever.wordpress.com"><img alt="Pkmn4Ever" src="../images/buttons/pkm4ever.gif" width="88" height="31"></a>
+		<a class="img" target="_blank" href="http://bit.ly/BR1PokemonMania-pokencyclopedia"><img alt="BR1PkMania" src="../images/buttons/pkmania.png" width="88" height="31"></a>
+		<img alt="" src="../images/buttons/5px_vbar.png" width="5" height="31">
+
+		<a href="https://www.ppntop50.com/" target="_blank" class="img"><img src="https://www.ppntop50.com/button.php?u=Venustoise&amp;buttontype=rank" alt="PPN Top 50" width="88" height="31" border="0"></a></td>
+		<td id="exec_time" style="color: SeaGreen; padding: 0 12px 12px; text-align: right; vertical-align: bottom;">Exec. time: 0.2067&nbsp;s - v1.0beta<br>Powered by PHP 7.4</td>
+	</tr>
+</tbody></table>
+</div>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top: 0; padding-left: 8px; padding-bottom: 4px; padding-right: 8px;">
+<table style="width: 100%; height: 48px; margin-top: -24px; border-collapse: separate; border-top: 0; border-left: 1px dotted MediumSeaGreen; border-bottom: 1px dotted MediumSeaGreen; border-right: 1px dotted MediumSeaGreen; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px;">
+	<tbody><tr><td style="padding: 0; font-size: 7pt;">&nbsp;</td></tr>
+	<tr>
+		<td style="padding: 0; font-size: 10pt;">
+		<span title="www.pokemon.com" style="cursor: help;">Pokémon<!--&trade;--></span> <!--and all its derivatives are--> ©1995-2022
+		<span title="www.nintendo.com" style="cursor: help;">Nintendo<!--<sup style="font-size: 7pt;">&reg;</sup>--></span>,
+		<span title="www.gamefreak.co.jp" style="cursor: help; white-space: nowrap">GAME FREAK inc.</span> &amp;
+		<span title="www.creatures.co.jp" style="cursor: help; white-space: nowrap">Creatures Inc.</span> ~
+		<span style="white-space: nowrap">Some rights reserved.</span></td>
+	</tr>
+</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+<script type="text/javascript">
+if (currentwidth < 640) {
+	document.getElementById('DyMenuTab').style.width='100%';
+	document.getElementById('DyMenuTab').style.float='none';
+	document.getElementById('homelink').innerHTML='Home'; };
+if (window.screen.width < 480 || currentwidth < 360 || window.screen.height < 480 || currentheight < 360) {
+	document.getElementById('DyMenuCap').innerHTML='<div style="margin-bottom: -18px;">&nbsp;<a class="min" href="#" onclick="document.getElementById(\'DyMenuTab\').style.display=\'none\'; document.getElementById(\'mobimenu\').style.display=\'table\'; opened=0;" style="color: #316AC5; background-color: white; text-decoration: none; position: relative; z-index: 2;">[<b>-</b>]</a></div>';
+	document.getElementById('DyMenuTab').style.display='none'; };
+</script>
+
+<script type="text/javascript">
+var onclickout = 1; </script>
+<table id="info" style="display: none; position: fixed; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; background-color: rgba(0,0,0,0.12);"><tbody><tr>
+<td onclick="if (onclickout) { document.getElementById('info').style.display='none'; };" style="padding: 0;">
+ <table id="fff" style="width: 300px; height: 400px; background-color: white; border: 3px double silver; border-collapse: separate; border-radius: 10px; margin: auto; vertical-align: middle;">
+  <tbody><tr>
+	<td onmouseover="onclickout=0;" onmouseout="onclickout=1;" style="vertical-align: top; padding: 0;">
+	<p style="position: relative; z-index: 7; margin-top: -42px; margin-left: 0; margin-bottom: -15px; margin-right: -25px; text-align: right; padding: 0;">
+	<b style="font-size: 48pt; color: Crimson; cursor: pointer;" title="Click2Close!" onclick="document.getElementById('info').style.display='none';">×</b></p><!--
+ --><div style="display: table; float: right; position: relative; z-index: 6; background-color: rgba(255,255,255,0.4); border-radius: 6px; width: 46px; height: 46px; margin-top: -42px; margin-left: 0; margin-bottom: -30px; margin-right: -20px;">
+&nbsp;</div><iframe name="INFrame" src="about:blank" style="width: 270px; height: 360px; position: relative; z-index: 10; border: 0; margin: 0; padding: 0;">
+Your browser does not support inline frames or is currently configured not to display inline frames.</iframe></td>
+  </tr>
+</tbody></table></td>
+</tr></tbody></table>
+
+<script type="text/javascript">
+document.getElementById('exec_time').innerHTML='Exec. time: 0.2067&nbsp;s - v1.0beta<br>Powered by PHP 7.4';
+/*
+document.getElementById('inf_table').style.display='table'; */
+</script>
+
+
+</body></html>
